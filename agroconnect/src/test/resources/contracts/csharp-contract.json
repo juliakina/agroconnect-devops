@@ -1,0 +1,209 @@
+{
+  "source": "https://github.com/Emanuelly0ventura/GS_DotNet",
+  "commit": "e0afc71888067fa8693e57521a6a1b1c32f5eb99",
+  "fields": {
+    "AlertInput": [
+      "deviceId",
+      "severity",
+      "title",
+      "message",
+      "reason"
+    ],
+    "AlertResponse": [
+      "id",
+      "deviceId",
+      "severity",
+      "status",
+      "title",
+      "message",
+      "reason",
+      "basedOn",
+      "createdAt"
+    ],
+    "ApiError": [
+      "code",
+      "message",
+      "details",
+      "timestamp"
+    ],
+    "AuthResponse": [
+      "accessToken",
+      "tokenType",
+      "expiresIn",
+      "user"
+    ],
+    "DeviceResponse": [
+      "id",
+      "code",
+      "name",
+      "fieldId",
+      "status",
+      "lastSeenAt",
+      "rssi",
+      "firmwareVersion"
+    ],
+    "FieldInput": [
+      "name",
+      "areaHectares"
+    ],
+    "FieldResponse": [
+      "id",
+      "propertyId",
+      "name",
+      "areaHectares"
+    ],
+    "HistoryPoint": [
+      "timestamp",
+      "value",
+      "min",
+      "max",
+      "sampleCount",
+      "quality"
+    ],
+    "HistoryResponse": [
+      "deviceId",
+      "sensorId",
+      "type",
+      "unit",
+      "interval",
+      "items",
+      "summary",
+      "simulatedData"
+    ],
+    "HistorySummary": [
+      "min",
+      "max",
+      "avg"
+    ],
+    "LatestReadingsResponse": [
+      "deviceId",
+      "recordedAt",
+      "readings",
+      "simulatedData"
+    ],
+    "LoginRequest": [
+      "email",
+      "password"
+    ],
+    "PageMeta": [
+      "number",
+      "size",
+      "totalItems",
+      "totalPages"
+    ],
+    "PlantingInput": [
+      "cropName",
+      "plantedAt",
+      "stage"
+    ],
+    "PlantingResponse": [
+      "id",
+      "fieldId",
+      "cropName",
+      "plantedAt",
+      "stage"
+    ],
+    "PropertyInput": [
+      "name",
+      "city",
+      "state",
+      "areaHectares",
+      "description"
+    ],
+    "PropertyResponse": [
+      "id",
+      "name",
+      "city",
+      "state",
+      "areaHectares",
+      "description",
+      "createdAt",
+      "updatedAt"
+    ],
+    "PushTokenInput": [
+      "token",
+      "platform"
+    ],
+    "ReadingResponse": [
+      "sensorId",
+      "type",
+      "value",
+      "unit",
+      "quality",
+      "recordedAt"
+    ],
+    "ReadingSnapshot": [
+      "type",
+      "value",
+      "unit",
+      "recordedAt"
+    ],
+    "RecommendationInput": [
+      "deviceId"
+    ],
+    "RecommendationResponse": [
+      "id",
+      "generatedAt",
+      "priority",
+      "title",
+      "message",
+      "reason",
+      "basedOn",
+      "disclaimer",
+      "simulatedData"
+    ],
+    "RegisterRequest": [
+      "name",
+      "email",
+      "password"
+    ],
+    "SensorResponse": [
+      "id",
+      "deviceId",
+      "type",
+      "label",
+      "unit"
+    ],
+    "UserResponse": [
+      "id",
+      "name",
+      "email",
+      "createdAt"
+    ]
+  },
+  "paths": {
+    "post": [
+      "/api/v1/auth/register",
+      "/api/v1/auth/login",
+      "/api/v1/auth/logout",
+      "/api/v1/properties",
+      "/api/v1/properties/{propertyId}/fields",
+      "/api/v1/fields/{fieldId}/plantings",
+      "/api/v1/alerts",
+      "/api/v1/me/push-tokens",
+      "/api/v1/recommendations"
+    ],
+    "get": [
+      "/api/v1/auth/me",
+      "/api/v1/properties",
+      "/api/v1/properties/{id}",
+      "/api/v1/fields/{id}",
+      "/api/v1/fields/{fieldId}/plantings",
+      "/api/v1/fields/{fieldId}/plantings/{id}",
+      "/api/v1/devices",
+      "/api/v1/devices/{id}",
+      "/api/v1/devices/{deviceId}/sensors",
+      "/api/v1/devices/{id}/readings",
+      "/api/v1/devices/{id}/readings/latest",
+      "/api/v1/alerts",
+      "/api/v1/alerts/{id}"
+    ],
+    "patch": [
+      "/api/v1/properties/{id}",
+      "/api/v1/alerts/{id}/read"
+    ],
+    "delete": [
+      "/api/v1/properties/{id}"
+    ]
+  }
+}
