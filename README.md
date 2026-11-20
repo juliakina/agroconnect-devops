@@ -326,5 +326,5 @@ agroconnect-devops/
 
 ## 12. Links
 
-- Vídeo de demonstração (GS DevOps): _x_
-- Organização no Azure DevOps: _x_
+- Vídeo de demonstração (GS DevOps): _https://youtu.be/3EPX4LzZFLg_
+- Organização no Azure DevOps: _https://dev.azure.com/RM564555/AgroConnect_
